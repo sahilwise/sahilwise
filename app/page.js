@@ -4,24 +4,7 @@ import Image from "next/image";
 
 export default async function Home() {
   const products = [
-    {
-      name: "RnWind",
-      title: "cool",
-      links: "https://rnwind.sahilwise.com",
-      des: "Twitter / X i.",
-      image: "https://sahilwise.com/tweetready.png",
-      blur: true,
-      earning : 'launching soon' 
-    },
-    {
-      name: "Best Affiliate",
-      title: "cool",
-      links: "https://bestaffiliate.site",
-      des: "Twitter / X i.",
-      image: "https://sahilwise.com/bestaffiliate.png",
-      blur: true,
-      earning : 'launchiung soon'
-    },
+
     {
       name: "xintent",
       title: "cool",
@@ -32,12 +15,30 @@ export default async function Home() {
       earning : '$0/mo'
     },
     {
+      name: "RnWind",
+      title: "cool",
+      links: "https://rnwind.sahilwise.com",
+      des: "Twitter / X i.",
+      image: "https://sahilwise.com/tweetready.png",
+      blur: false,
+      earning : 'launching soon' 
+    },
+    {
+      name: "Best Affiliate",
+      title: "cool",
+      links: "https://bestaffiliate.site",
+      des: "Twitter / X i.",
+      image: "https://sahilwise.com/bestaffiliate.png",
+      blur: false,
+      earning : 'launchiung soon'
+    },
+    {
       name: "CodeBrew",
       title: "cool",
       links: "https://codebrew.news",
       des: "Byte size news",
       image: "https://sahilwise.com/codebrew.png",
-      blur: true,
+      blur: false,
       earning : 'Early Beta'
     },
     {
