@@ -31,7 +31,7 @@ const Footer = ({homepage, productspage, opensourcepage})=>{
 
           <Link href={'/opensource'}>
           <div className={`p-3 ${opensourcepage ? 'bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5] ' : 'bg-neutral-400 text-[#CCCCCC]'} rounded-2xl`}  target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className={`${opensourcepage ? 'fill-[#16161d]' : 'fill-[#FFF]'}`} viewBox="0 0 24 24"><path d="M19.769 9.923l-12.642 12.639-7.127 1.438 1.438-7.128 12.641-12.64 5.69 5.691zm1.414-1.414l2.817-2.82-5.691-5.689-2.816 2.817 5.69 5.692z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className={`${opensourcepage ? 'fill-[#16161d]' : 'fill-[#FFF]'}`}  viewBox="0 0 24 24"><path d="M23 0l-15.996 3.585v13.04c-2.979-.589-6.004 1.671-6.004 4.154 0 2.137 1.671 3.221 3.485 3.221 2.155 0 4.512-1.528 4.515-4.638v-10.9l12-2.459v8.624c-2.975-.587-6 1.664-6 4.141 0 2.143 1.715 3.232 3.521 3.232 2.14 0 4.476-1.526 4.479-4.636v-17.364z"/></svg>
           </div>
           </Link>
 
