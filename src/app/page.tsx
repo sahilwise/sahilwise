@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#232323] text-white flex flex-col">
@@ -19,7 +19,7 @@ export default function Home() {
         <div className="absolute left-4 md:left-1/4 top-20 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
           <div className="relative inline-flex items-center">
             <span className="bg-[#FF5C38] text-black px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base font-medium">
-              Software Engineer
+              App Developer
             </span>
             <svg 
               width="20" 
@@ -54,7 +54,8 @@ export default function Home() {
         <div className="absolute right-4 md:right-1/4 top-32 md:top-1/3 md:transform md:translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
             <div className="bg-[#999] text-[#000000] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
-              Hi, I&apos;m Sahilwise
+              {/* Hi, I&apos;m Sahilwise */}
+              Hi, There
             </div>
             <div className="absolute -top-1 right-3 w-2 h-2 bg-[#999] transform rotate-45" />
           </div>
@@ -86,7 +87,9 @@ export default function Home() {
             </a>
             </div>
         </div>
+        
       </main>
+      <Footer homepage={true} />
     </div>
   )
 }
