@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className="absolute left-4 md:left-1/4 top-20 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
-            <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
+            <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Software Engineer
             </div>
             <div className="absolute -top-7 left-48 transform h-2 w-2 rotate-90">
@@ -51,11 +51,11 @@ export default function Home() {
         {/* Greeting */}
         <div className="absolute right-4 md:right-1/4 top-32 md:top-1/3 md:transform md:translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
-            <div className="bg-gradient-to-tl from-[#FF00E6] via-[#f76ee9] to-[#a20d93] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
+            <div className="bg-gradient-to-tl from-[#FF00E6] via-[#f76ee9] to-[#a20d93] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Hi, I&apos;m Sahilwise
             </div>
-            <div className="absolute -top-6 -left-8 transform h-2 w-2 -rotate-75">
-            <MousePointer2 size={28} color='#FF00E6' fill="#FF00E6" />
+            <div className="absolute sm:-top-6 -top-5 sm:-left-8 -left-5 transform h-2 w-2 -rotate-75">
+            <MousePointer2 size={22} color='#FF00E6' fill="#FF00E6" />
             </div>
           </div>
         </div>
