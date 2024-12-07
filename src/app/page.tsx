@@ -26,21 +26,21 @@ export default function Home() {
             <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Software Engineer
             </div>
-            <div className="absolute -top-7 left-48 transform h-2 w-2 rotate-90">
-            <MousePointer2 size={28} color='#FE4E28' fill="#FE4E28" />
+            <div className="absolute sm:-top-7 sm:left-48 -top-5 left-36 transform h-2 w-2 rotate-90">
+            <MousePointer2 size={22} color='#FE4E28' fill="#FE4E28" />
             </div>
           </div>
         </div>
 
         {/* Avatar */}
         <div className="mb-12 md:mb-16 mt-24 md:mt-0">
-          <div className="w-24 h-24  md:w-28 md:h-28 border-4 shadow-2xl p-2 border-[#3D3D3D] rounded-full">
+          <div className="w-28 h-28  sm:w-28 sm:h-28 border-4 shadow-2xl border-[#3D3D3D] rounded-full">
             <div className="w-full h-full bg-[#2C2C2C] rounded-full flex items-center justify-center text-sm md:text-base">
               <Image
                 src={'/sahilwise.png'}
                 alt='sahilwise'
-                width={150}
-                height={150}
+                width={450}
+                height={450}
                 className='rounded-full'
 
               />
