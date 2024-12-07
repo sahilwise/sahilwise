@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-
+import { House} from 'lucide-react';
 
 interface FooterProps {
   homepage?: boolean; // Mark props as optional if they aren't always provided
@@ -13,18 +13,18 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
   return (
     <Fragment>
       <div className="flex flex-col sm:rounded-3xl">
-        <div className="sm:backdrop-blur-3xl py-4 px-8 text-sm  sm:border-2 border-neutral-500 sm:bg-black/5 sm:rounded-3xl text-neutral-500 p-2 fixed sm:bottom-12 bottom-8 left-1/2 transform -translate-x-1/2 w-96">
+        <div className="sm:backdrop-blur-3xl py-3 px-4 text-sm  sm:border-2 border-neutral-900 sm:bg-black/30 sm:rounded-xl text-neutral-500 p-2 fixed sm:bottom-12 bottom-8 left-1/2 transform -translate-x-1/2 w-72">
           <div className="flex sm:justify-between justify-around items-center">
 
 
           <Link href={"https://x.com/sahilwise"}>
               <div className="bg-[#292929] rounded-2xl border-2 border-[#3D3D3D]">
                 <Image
-                  src={"/sahilwise.png"}
-                  width={50}
-                  height={50}
+                  src={"/panda.png"}
+                  width={40}
+                  height={40}
                   alt="twitter or X"
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
               </div>
             </Link>
@@ -34,21 +34,24 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
               <div
                 className={`p-3 ${
                   homepage
-                    ? "bg-gradient-to-br from-[#FE5B38] via-[#ff481f] to-[#FE5B38]"
+                    ? "bg-gradient-to-br from-[#fffaf9] via-[#a8a8a8] to-[#ffffff]"
                     : "bg-neutral-400 text-[#CCCCCC]"
-                } rounded-2xl`}
+                } rounded-xl`}
               >
-                <svg
+                
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`${
                     homepage ? "fill-[#16161d]" : "fill-[#FFF]"
                   }`}
-                  width="24"
-                  height="24"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z" />
-                </svg>
+                </svg> */}
+
+                <House size={18} color='#FFF' fill="#000" />
               </div>
             </Link>
 
@@ -57,12 +60,12 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
                 className={`p-3 ${
                   productspage
                     ? "bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5]"
-                    : "bg-neutral-400 text-[#CCCCCC]"
-                } rounded-2xl`}
+                    : "bg-gradient-to-br from-[#312e2d] via-[#2c2b2b] to-[#272525] text-white"
+                } rounded-xl`}
               >
                 <svg
-                  width="24"
-                  height="24"
+                  width="16"
+                  height="16"
                   xmlns="http://www.w3.org/2000/svg"
                   className={`${
                     productspage ? "fill-[#16161d]" : "fill-[#FFF]"
@@ -80,13 +83,13 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
                 className={`p-3 ${
                   opensourcepage
                     ? "bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5]"
-                    : "bg-neutral-400 text-[#CCCCCC]"
-                } rounded-2xl`}
+                    : "bg-gradient-to-br from-[#312e2d] via-[#2c2b2b] to-[#272525] text-white"
+                } rounded-xl`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="16"
+                  height="16"
                   className={`${
                     opensourcepage ? "fill-[#16161d]" : "fill-[#FFF]"
                   }`}

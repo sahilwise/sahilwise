@@ -17,35 +17,31 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-start relative px-4 md:px-8">
+        
+        
         {/* Web Designer Tag */}
+
         <div className="absolute left-4 md:left-1/4 top-20 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
-          <div className="relative inline-flex items-center">
-            <span className="bg-[#FF5C38] text-black px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base font-medium">
-              App Developer
-            </span>
-            <svg 
-              width="20" 
-              height="20" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              className="absolute -right-5 md:-right-6 text-[#FF5C38]"
-            >
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <div className="relative">
+            <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
+              Software Engineer
+            </div>
+            <div className="absolute -top-7 left-48 transform h-2 w-2 rotate-90">
+            <MousePointer2 size={28} color='#FE4E28' fill="#FE4E28" />
+            </div>
           </div>
         </div>
 
         {/* Avatar */}
         <div className="mb-12 md:mb-16 mt-24 md:mt-0">
-          <div className="w-24 h-24  md:w-28 md:h-28 border-2 p-2 border-[#3D3D3D] rounded-lg">
-            <div className="w-full h-full bg-[#2C2C2C] rounded-lg flex items-center justify-center text-sm md:text-base">
+          <div className="w-24 h-24  md:w-28 md:h-28 border-4 shadow-2xl p-2 border-[#3D3D3D] rounded-full">
+            <div className="w-full h-full bg-[#2C2C2C] rounded-full flex items-center justify-center text-sm md:text-base">
               <Image
                 src={'/sahilwise.png'}
                 alt='sahilwise'
-                width={130}
-                height={130}
-                className='rounded-lg'
+                width={150}
+                height={150}
+                className='rounded-full'
 
               />
             </div>
@@ -55,18 +51,18 @@ export default function Home() {
         {/* Greeting */}
         <div className="absolute right-4 md:right-1/4 top-32 md:top-1/3 md:transform md:translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
-            <div className="bg-[#999] text-[#000000] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
+            <div className="bg-gradient-to-tl from-[#FF00E6] via-[#f76ee9] to-[#a20d93] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
               Hi, I&apos;m Sahilwise
             </div>
             <div className="absolute -top-6 -left-8 transform h-2 w-2 -rotate-75">
-            <MousePointer2 size={28} color='#999999' fill="#999999" />
+            <MousePointer2 size={28} color='#FF00E6' fill="#FF00E6" />
             </div>
           </div>
         </div>
 
         {/* Main Title */}
         <div className="text-center px-4 md:px-0 bg-gradient-to-tl from-[#4E4E4E] via-[#fff] to-[#4E4E4E] bg-clip-text text-transparent">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-2 md:mb-4">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-2 md:mb-4">
             Digital Designer
           </h1>
           <div className="flex items-center justify-center text-3xl sm:text-5xl">
@@ -77,16 +73,16 @@ export default function Home() {
 
         {/* Contact Info */}
         <div className="w-full max-w-5xl flex justify-center text-white/40 mt-8 md:mt-16 text-lg">
-          <div className='px-5'>
-            <p className="mb-1 md:mb-2 text-center text-[#474747]">Contact</p>
-            <a href="mailto:hey@sahilwise.me" className="hover:text-white text-[#808080] text-center transition-colors">
-              hey@sahilwise.com
-            </a>
-          </div>
-          <div className="px-5">
+          {/* <div className='px-5'>
             <p className="mb-1 md:mb-2 text-center text-[#474747]">Location</p>
+            <a href="mailto:hey@sahilwise.me" className="hover:text-white text-[#808080] text-center transition-colors">
+              Kolkata / Remote
+            </a>
+          </div> */}
+          <div className="px-5">
+            <p className="mb-1 md:mb-2 text-center text-[#474747]">Contact</p>
             <a target='_blank' href="https://maps.app.goo.gl/6u9qComLkuGXr3S18" className="hover:text-white text-[#808080] text-center transition-colors">
-            Remote
+            hey@sahilwise.com
             </a>
             </div>
         </div>
