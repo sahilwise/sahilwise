@@ -55,7 +55,7 @@ export default function Home() {
           <div className="relative">
             <div className="bg-[#999] text-[#000000] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
               {/* Hi, I&apos;m Sahilwise */}
-              Hi, There
+              Web Developer
             </div>
             <div className="absolute -top-1 right-3 w-2 h-2 bg-[#999] transform rotate-45" />
           </div>
