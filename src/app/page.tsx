@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Footer from "./components/Footer";
+import { MousePointer2} from 'lucide-react';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#232323] text-white flex flex-col">
@@ -54,21 +56,22 @@ export default function Home() {
         <div className="absolute right-4 md:right-1/4 top-32 md:top-1/3 md:transform md:translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
             <div className="bg-[#999] text-[#000000] px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-md font-medium md:text-base">
-              {/* Hi, I&apos;m Sahilwise */}
-              Web Developer
+              Hi, I&apos;m Sahilwise
             </div>
-            <div className="absolute -top-1 right-3 w-2 h-2 bg-[#999] transform rotate-45" />
+            <div className="absolute -top-6 -left-8 transform h-2 w-2 -rotate-75">
+            <MousePointer2 size={28} color='#999999' fill="#999999" />
+            </div>
           </div>
         </div>
 
         {/* Main Title */}
-        <div className="text-center px-4 md:px-0">
-          <h1 className="text-4xl sm:text-3xl md:text-5xl font-bold mb-2 md:mb-4">
+        <div className="text-center px-4 md:px-0 bg-gradient-to-tl from-[#4E4E4E] via-[#fff] to-[#4E4E4E] bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-2 md:mb-4">
             Digital Designer
           </h1>
-          <div className="flex items-center justify-center text-3xl sm:text-4xl md:text-5xl">
-            <span className="text-white/30 mr-2 font-bold md:mr-4">and</span>
-            <span className="font-bold text-white/60">Creative Developer</span>
+          <div className="flex items-center justify-center text-3xl sm:text-5xl">
+            <span className="mr-2 font-bold md:mr-4">and</span>
+            <span className="font-bold">Creative Developer</span>
           </div>
         </div>
 
@@ -83,7 +86,7 @@ export default function Home() {
           <div className="px-5">
             <p className="mb-1 md:mb-2 text-center text-[#474747]">Location</p>
             <a target='_blank' href="https://maps.app.goo.gl/6u9qComLkuGXr3S18" className="hover:text-white text-[#808080] text-center transition-colors">
-            Kolkata / Remote
+            Remote
             </a>
             </div>
         </div>
