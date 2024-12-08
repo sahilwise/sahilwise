@@ -1,27 +1,33 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  variable: "--bricolage-grotesque",
 });
 
 export const metadata: Metadata = {
-  title: "Sahilwise",
-  description: "Sahilwise",
+  title: "codebrew",
+  description: "read codebrew shorts",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type RootLayoutProps = {
   children: React.ReactNode;
-}>) {
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={bricolageGrotesque.className}>
-      <body className="antialiased">
-        {children}
-      </body>
+    <html lang="en">
+      <head>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-7123797226885173"
+        />
+      </head>
+      <body className={bricolageGrotesque.className}>{children}</body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }

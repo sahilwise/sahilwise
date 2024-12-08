@@ -40,7 +40,7 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
               </div>
             </Link>
 
-            <Link href={"/products"}>
+            <Link href={"/apps"}>
               <div
                 className={`p-3 ${productspage
                     ? "bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5]"

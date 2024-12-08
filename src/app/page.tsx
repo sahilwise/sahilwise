@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Footer from "./components/Footer";
-import { MousePointer2} from 'lucide-react';
+import { MousePointer2 } from 'lucide-react';
+import { LogoScroll } from './components/logo-scroll';
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-start relative px-4 md:px-8">
-        
-        
+
+
         {/* Web Designer Tag */}
 
         <div className="absolute left-4 md:left-1/4 top-20 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
@@ -27,7 +28,7 @@ export default function Home() {
               Software Engineer
             </div>
             <div className="absolute sm:-top-7 sm:left-48 -top-5 left-36 transform h-2 w-2 rotate-90">
-            <MousePointer2 size={22} color='#FE4E28' fill="#FE4E28" />
+              <MousePointer2 size={22} color='#FE4E28' fill="#FE4E28" />
             </div>
           </div>
         </div>
@@ -55,19 +56,19 @@ export default function Home() {
               Hi, I&apos;m Sahilwise
             </div>
             <div className="absolute sm:-top-6 -top-5 sm:-left-8 -left-5 transform h-2 w-2 -rotate-75">
-            <MousePointer2 size={22} color='#FF00E6' fill="#FF00E6" />
+              <MousePointer2 size={22} color='#FF00E6' fill="#FF00E6" />
             </div>
           </div>
         </div>
 
         {/* Main Title */}
         <div className="text-center px-4 md:px-0 bg-gradient-to-tl from-[#4E4E4E] via-[#fff] to-[#4E4E4E] bg-clip-text text-transparent">
-          <h1 className="text-3xl sm:text-5xl font-bold mb-2 md:mb-4">
+          <h1 className="text-3xl  sm:text-5xl font-normal mb-2 md:mb-4">
             Digital Designer
           </h1>
           <div className="flex items-center justify-center text-3xl sm:text-5xl">
-            <span className="mr-2 font-bold md:mr-4">and</span>
-            <span className="font-bold">Creative Developer</span>
+            <span className="mr-2 font-normal md:mr-4">and</span>
+            <span className="font-normal">Creative Developer</span>
           </div>
         </div>
 
@@ -82,11 +83,19 @@ export default function Home() {
           <div className="px-5">
             <p className="mb-1 md:mb-2 text-center text-[#474747]">Contact</p>
             <a target='_blank' href="https://maps.app.goo.gl/6u9qComLkuGXr3S18" className="hover:text-white text-[#808080] text-center transition-colors">
-            hey@sahilwise.com
+              hey@sahilwise.com
             </a>
-            </div>
+          </div>
         </div>
-        
+
+
+        <div className="flex flex-col mt-16 items-center justify-center">
+          <div className="w-full max-w-3xl px-4 md:px-6">
+            <LogoScroll />
+          </div>
+        </div>
+
+
       </main>
       <Footer homepage={true} />
     </div>
