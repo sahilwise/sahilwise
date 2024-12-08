@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Web Designer Tag */}
 
-        <div className="absolute left-4 md:left-1/4 top-20 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
+        <div className="absolute left-4 md:left-1/4 sm:top-20 top-96 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
             <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Software Engineer
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         {/* Avatar */}
-        <div className="mb-12 md:mb-16 mt-24 md:mt-0">
+        <div className="mb-12 md:mb-16 sm:mt-24 mt-4 md:mt-0">
           <div className="w-28 h-28  sm:w-28 sm:h-28 border-4 shadow-2xl border-[#3D3D3D] rounded-full">
             <div className="w-full h-full bg-[#2C2C2C] rounded-full flex items-center justify-center text-sm md:text-base">
               <Image
