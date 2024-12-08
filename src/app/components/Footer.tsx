@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-import { House } from 'lucide-react';
 
 interface FooterProps {
   homepage?: boolean; // Mark props as optional if they aren't always provided
