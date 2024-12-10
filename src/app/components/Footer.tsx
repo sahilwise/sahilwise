@@ -10,7 +10,7 @@ interface FooterProps {
 export default function Footer({ homepage, productspage, opensourcepage }: FooterProps) {
   return (
     <Fragment>
-      <div className="flex flex-col sm:rounded-3xl">
+      <div className="flex flex-col sm:rounded-3xl z-50">
         <div className="backdrop-blur-3xl py-3 px-4 text-sm  border-2 border-[#16161d] bg-black/30 rounded-2xl bo text-neutral-500 p-2 fixed sm:bottom-12 bottom-8 left-1/2 transform -translate-x-1/2 w-72">
           <div className="flex sm:justify-between justify-around items-center">
 

@@ -9,8 +9,8 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "codebrew",
-  description: "read codebrew shorts",
+  title: "sahilwise",
+  description: "hey, this is sahilwise",
 };
 
 type RootLayoutProps = {

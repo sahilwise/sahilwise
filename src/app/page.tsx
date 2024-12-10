@@ -11,9 +11,9 @@ export default function Home() {
       <nav className="flex justify-between items-center p-4 md:p-6">
         <span className="text-white/60 text-lg md:text-xl">Sahilwise</span>
         <div className="flex gap-4 md:gap-6">
-          <a href="#" className="text-white/60 hover:text-white transition-colors">Home</a>
-          <a href="#" className="text-white/60 hover:text-white transition-colors">Apps</a>
-          <a href="#" className="text-white/60 hover:text-white transition-colors">Contact</a>
+          <a href="#" className="text-white/60 hover:text-white/75 transition-colors">Home</a>
+          <a href="#" className="text-white/60 hover:text-white/75 transition-colors">Apps</a>
+          <a href="#" className="text-white/60 hover:text-white/75 transition-colors">Contact</a>
         </div>
       </nav>
 
@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className="absolute left-4 md:left-1/4 sm:top-20 top-96 md:top-1/4 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
-            <div className="bg-gradient-to-bl from-[#FE4E28] via-[rgb(221,49,10)] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
+            <div className="bg-gradient-to-bl from-[#FE4E28] via-[#FE5D2B] to-[#e76446] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Software Engineer
             </div>
             <div className="absolute sm:-top-7 sm:left-48 -top-5 left-36 transform h-2 w-2 rotate-90">
@@ -53,22 +53,22 @@ export default function Home() {
         {/* Greeting */}
         <div className="absolute right-4 md:right-1/4 top-32 md:top-1/3 md:transform md:translate-x-1/2 md:-translate-y-1/2">
           <div className="relative">
-            <div className="bg-gradient-to-tl from-[#FF00E6] via-[#f76ee9] to-[#a20d93] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
+            <div className="bg-gradient-to-tl from-[#A3A3A3] via-[#A3A3A3] to-[#A3A3A3] text-[#fff] px-3 py-1.5 md:px-4 md:py-2 rounded-lg sm:text-md text-xs font-medium md:text-base">
               Hi, I&apos;m Sahilwise
             </div>
             <div className="absolute sm:-top-6 -top-5 sm:-left-8 -left-5 transform h-2 w-2 -rotate-75">
-              <MousePointer2 size={22} color='#FF00E6' fill="#FF00E6" />
+              <MousePointer2 size={22} color='#A3A3A3' fill="#A3A3A3" />
             </div>
           </div>
         </div>
 
         {/* Main Title */}
         <div className="text-center px-4 md:px-0 bg-gradient-to-tl from-[#4E4E4E] via-[#fff] to-[#4E4E4E] bg-clip-text text-transparent">
-          <h1 className="text-3xl  sm:text-5xl font-normal mb-2 md:mb-4">
+          <h1 className="text-2xl tracking-tight sm:text-5xl font-normal mb-2 md:mb-4">
             Digital Designer
           </h1>
-          <div className="flex items-center justify-center text-3xl sm:text-5xl">
-            <span className="mr-2 font-normal md:mr-4">and</span>
+          <div className="flex items-center justify-center text-2xl sm:text-5xl">
+            <span className="mr-2 font-normal md:mr-2">and</span>
             <span className="font-normal">Creative Developer</span>
           </div>
         </div>
@@ -90,8 +90,8 @@ export default function Home() {
         </div>
 
 
-        <div className="flex flex-col mt-16 items-center justify-center">
-          <div className="w-full max-w-3xl px-4 md:px-6">
+        <div className="flex flex-col sm:mt-16 mt-20 items-center justify-center">
+          <div className="w-full sm:max-w-4xl max-w-sm px-4 md:px-6">
             <LogoScroll />
           </div>
         </div>
