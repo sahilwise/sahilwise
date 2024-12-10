@@ -83,7 +83,7 @@ export default function Home() {
           </div> */}
           <div className="px-5">
             <p className="mb-1 md:mb-2 text-center text-[#474747]">Contact</p>
-            <a target='_blank' href="https://maps.app.goo.gl/6u9qComLkuGXr3S18" className="hover:text-white text-[#808080] text-center transition-colors">
+            <a target='_blank' href="mailto:hey@sahilwise.com" className="hover:text-white text-[#808080] text-center transition-colors">
               hey@sahilwise.com
             </a>
           </div>
