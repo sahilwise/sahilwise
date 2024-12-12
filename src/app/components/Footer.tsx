@@ -62,7 +62,7 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
               </div>
             </Link>
 
-            <Link href={"/opensource"}>
+            <Link href={"/blogs"}>
               <div
                 className={`p-3 ${opensourcepage
                     ? "bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5]"
@@ -83,7 +83,7 @@ export default function Footer({ homepage, productspage, opensourcepage }: Foote
             </Link>
 
 
-            <Link href={"/opensource"}>
+            <Link href={"/chat"}>
               <div
                 className={`p-3 ${opensourcepage
                     ? "bg-gradient-to-b from-[#cbdb3d] via-[#f4fc1b] to-[#fff4a5]"
